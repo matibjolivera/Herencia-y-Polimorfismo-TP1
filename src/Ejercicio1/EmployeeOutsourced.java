@@ -52,10 +52,6 @@ public class EmployeeOutsourced extends Employee {
 
     @Override
     public String toString() {
-        return "EmployeeOutsourced{" +
-                "name='" + this.getName() + '\'' +
-                ", age=" + this.getAge() +
-                ", wins=" + this.calculatePayment() +
-                '}';
+        return super.toString();
     }
 }
