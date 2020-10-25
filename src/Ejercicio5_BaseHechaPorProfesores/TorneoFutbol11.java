@@ -1,6 +1,6 @@
 package Ejercicio5_BaseHechaPorProfesores;
 
-public class TorneoFutbol11 {
+public class TorneoFutbol11 extends TorneoFutbol {
 
 	public TorneoFutbol11() {
 	}
@@ -12,7 +12,7 @@ public class TorneoFutbol11 {
 
 	@Override
 	public int puntajePartidoGanado() {
-		// Completar
+		return 3;
 	}
 
 	@Override

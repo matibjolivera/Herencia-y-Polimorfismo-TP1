@@ -8,19 +8,21 @@ public class Jornada {
 	private int fecha;//1,2...n
 
 	public Jornada() {
-		// Completar
+		this.partidos = new ArrayList<>();
+		this.fecha = 1;
 	}
 	
 	public Jornada(int fecha) {
-		// Completar
+		this.partidos = new ArrayList<>();
+		this.fecha = fecha;
 	}
 	
 	public void agregarPartido(Partido partido) {
-		// Completar
+		this.getPartidos().add(partido);
 	}
 	
 	public void eliminarPartido(Partido partido) {
-		// Completar
+		this.getPartidos().remove(partido);
 	}
 	
 	public ArrayList<Partido> getPartidos() {

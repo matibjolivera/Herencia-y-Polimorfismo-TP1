@@ -4,22 +4,26 @@ public class TestEjercicio05 {
 
 	public static void main(String[] args) {
 		TorneoFutbol torneoFutbol8 = new TorneoFutbol8();
-		
+
 		Equipo boca 			= new Equipo("Boca", 0);
 		Equipo river 			= new Equipo("River", 0);
 		Equipo velez 			= new Equipo("Velez", 0);
 		Equipo sanLorenzo 		= new Equipo("San Lorenzo", 0);
 		Equipo racing 			= new Equipo("Racing", 0);
 		Equipo independiente 	= new Equipo("Independiente", 0);
-		
-		// Completar
-		
+
+		torneoFutbol8.agregarEquipo(boca);
+		torneoFutbol8.agregarEquipo(river);
+		torneoFutbol8.agregarEquipo(velez);
+		torneoFutbol8.agregarEquipo(sanLorenzo);
+		torneoFutbol8.agregarEquipo(racing);
+		torneoFutbol8.agregarEquipo(independiente);
+
 		Jornada fecha1	= new Jornada(1);
 		Jornada fecha2	= new Jornada(2);
 		Jornada fecha3	= new Jornada(3);
 		Jornada fecha4	= new Jornada(4);
 		Jornada fecha5	= new Jornada(5);
-		
 
 		Partido	bocavssanLorenzo= new Partido(boca,sanLorenzo,5,4);
 		Partido	rivervsracing= new Partido(river,racing,1,2);
@@ -37,23 +41,34 @@ public class TestEjercicio05 {
 		Partido	rivervsvelez= new Partido(river,velez,2,5);
 		Partido	sanLorenzovsracing= new Partido(sanLorenzo,racing,0,3);
 
-		
-		// Completar
-		
-		
-		
+		fecha1.agregarPartido(bocavssanLorenzo);
+		//fecha1.agregarPartido(rivervsracing);
+		//fecha1.agregarPartido(velezvsindependiente);
+		fecha2.agregarPartido(bocavsriver);
+		fecha2.agregarPartido(sanLorenzovsindependiente);
+		fecha2.agregarPartido(racingvsvelez);
+		fecha3.agregarPartido(bocavsvelez);
+		fecha3.agregarPartido(sanLorenzovsriver);
+		fecha3.agregarPartido(racingvsindependiente);
+		fecha4.agregarPartido(bocavsRacing);
+		fecha4.agregarPartido(rivervsindependiente);
+		fecha4.agregarPartido(sanLorenzovsvelez);
+		fecha5.agregarPartido(bocavsindependiente);
+		fecha5.agregarPartido(rivervsvelez);
+		fecha5.agregarPartido(sanLorenzovsracing);
+
 		torneoFutbol8.agregarJornada(fecha1);
 		torneoFutbol8.agregarJornada(fecha2);
 		torneoFutbol8.agregarJornada(fecha3);
 		torneoFutbol8.agregarJornada(fecha4);
 		torneoFutbol8.agregarJornada(fecha5);
-		
+
 		torneoFutbol8.finalizarJornada(fecha1);
 		torneoFutbol8.finalizarJornada(fecha2);
 		torneoFutbol8.finalizarJornada(fecha3);
 		torneoFutbol8.finalizarJornada(fecha4);
 		torneoFutbol8.finalizarJornada(fecha5);
-		
-		// Completar
+
+		torneoFutbol8.mostrarTabla();
 	}
 }
