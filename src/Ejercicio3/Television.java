@@ -7,6 +7,9 @@ public class Television extends Product {
 
     private float inches;
     private boolean isSmart;
+    /**
+     * The constant CODE.
+     */
     public static String CODE = "01";
 
     /**

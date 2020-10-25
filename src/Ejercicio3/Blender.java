@@ -7,6 +7,9 @@ public class Blender extends Product {
 
     private float power;
     private int quantitySpeeds;
+    /**
+     * The constant CODE.
+     */
     public static String CODE = "03";
 
     /**

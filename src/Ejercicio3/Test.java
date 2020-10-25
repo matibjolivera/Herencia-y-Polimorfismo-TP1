@@ -2,8 +2,16 @@ package Ejercicio3;
 
 import java.util.Scanner;
 
+/**
+ * The type Test.
+ */
 public class Test {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

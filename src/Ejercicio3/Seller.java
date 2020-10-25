@@ -36,10 +36,18 @@ public class Seller {
         this.products = products;
     }
 
+    /**
+     * Add product.
+     *
+     * @param product the product
+     */
     public void addProduct(Product product) {
         this.getProducts().add(product);
     }
 
+    /**
+     * Show products.
+     */
     public void showProducts() {
     	int j;
         for (int i = 0; i < this.getProducts().size(); i++) {

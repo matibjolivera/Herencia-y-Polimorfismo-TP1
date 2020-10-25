@@ -36,10 +36,18 @@ public class Sale {
         this.products = products;
     }
 
+    /**
+     * Add product.
+     *
+     * @param product the product
+     */
     public void addProduct(Product product) {
         this.getProducts().add(product);
     }
 
+    /**
+     * Close.
+     */
     public void close() {
         Ticket ticket = new Ticket(this.getProducts());
         ticket.print();

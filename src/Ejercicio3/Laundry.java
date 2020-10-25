@@ -7,6 +7,9 @@ public class Laundry extends Product {
 
     private float capacity;
     private boolean isAutomatic;
+    /**
+     * The constant CODE.
+     */
     public static String CODE = "02";
 
     /**

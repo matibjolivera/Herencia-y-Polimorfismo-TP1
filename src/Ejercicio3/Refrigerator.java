@@ -7,6 +7,9 @@ public class Refrigerator extends Product {
 
     private float capacity;
     private boolean isNoFrost;
+    /**
+     * The constant CODE.
+     */
     public static String CODE = "04";
 
     /**
